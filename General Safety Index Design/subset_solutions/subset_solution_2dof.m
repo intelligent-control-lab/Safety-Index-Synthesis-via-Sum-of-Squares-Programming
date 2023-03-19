@@ -32,9 +32,6 @@ for k = 2:0.5:5
     for i = 1:max_iter
         % x = [p1, p2, p3, p4, q1]
         rng(seed);
-    %     xref  = [1000*rand(1), 1000*rand(1,4), 1000*(-1 + 2*rand(1,2))];
-    %     xref  = [10*rand(1), 1000*rand(1,4), 1000*(-1 + 2*rand(1,2))];
-    %     xref  = [100*rand(1), 100*rand(1,4), 100*(-1 + 2*rand(1))];
         xref  = [100*rand(1,9), 100*(-1 + 2*rand(1)), 100*(-1 + 2*rand(1))];
         
         % find it 
