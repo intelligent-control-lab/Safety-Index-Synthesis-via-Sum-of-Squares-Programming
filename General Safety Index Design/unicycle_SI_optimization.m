@@ -20,8 +20,6 @@ max_iter = 10;
 
 % decision variable is c1
 options = optimoptions('fmincon','Display','iter','Algorithm','interior-point','ConstraintTolerance',5e-13);
-% options = optimoptions('fmincon','Display','iter','Algorithm','interior-point','ConstraintTolerance',1e-15);
-% options = optimoptions('fmincon','Display','iter','Algorithm','sqp','ConstraintTolerance',1e-15);
 
 obj = @(x)x(1);
  
@@ -79,6 +77,8 @@ for i = 1:max_iter
     seed = seed + 1;
 end
 toc
+
+fprintf('the minimum k for unicycle is designed as %d', min(xs));
 
 %% auxiliary functions
 function [c, ceq] = nonlcon_sdp(x)

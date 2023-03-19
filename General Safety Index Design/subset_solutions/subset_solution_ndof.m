@@ -3,12 +3,12 @@ clc
 clear
 % how many links of robot arms
 global num_links;
-% num_links = 6;
-num_links = 12;
+num_links = 6;
+% num_links = 12;
 % num_links = 24;
 global limitation_links;
-% limitation_links = [sqrt(3)/2, sqrt(2.5)/2, sqrt(2.7)/2, sqrt(2.3)/2, sqrt(2.8)/2, sqrt(2.6)/2];
-limitation_links = [sqrt(3)/2, sqrt(2.5)/2, sqrt(2.7)/2, sqrt(2.3)/2, sqrt(2.8)/2, sqrt(2.6)/2, sqrt(3)/2, sqrt(2.5)/2, sqrt(2.7)/2, sqrt(2.3)/2, sqrt(2.8)/2, sqrt(2.6)/2];
+limitation_links = [sqrt(3)/2, sqrt(2.5)/2, sqrt(2.7)/2, sqrt(2.3)/2, sqrt(2.8)/2, sqrt(2.6)/2];
+% limitation_links = [sqrt(3)/2, sqrt(2.5)/2, sqrt(2.7)/2, sqrt(2.3)/2, sqrt(2.8)/2, sqrt(2.6)/2, sqrt(3)/2, sqrt(2.5)/2, sqrt(2.7)/2, sqrt(2.3)/2, sqrt(2.8)/2, sqrt(2.6)/2];
 % limitation_links = [sqrt(3)/2, sqrt(2.5)/2, sqrt(2.7)/2, sqrt(2.3)/2, sqrt(2.8)/2, ...
 %                     sqrt(2.6)/2, sqrt(3)/2, sqrt(2.5)/2, sqrt(2.7)/2, sqrt(2.3)/2, ...
 %                     sqrt(2.8)/2, sqrt(2.6)/2, sqrt(3)/2, sqrt(2.5)/2, sqrt(2.7)/2, ...

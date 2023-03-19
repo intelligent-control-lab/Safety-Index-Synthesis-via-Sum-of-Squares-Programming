@@ -73,8 +73,8 @@ for k = 2:0.5:5
     end
 end
 
-% k = max(xs);
-% fprintf("the computed solution is %d \n", k);
+k = min(xs);
+fprintf("the computed solution is %d \n", k);
 
 
 function [c, ceq] = nonlcon_sdp(k, x)
