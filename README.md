@@ -15,7 +15,7 @@ By Weiye Zhao, Tairan He, Tianhao Wei, Simin Liu and Changliu Liu
 CPU, Windows 7 or later, MAC OS.
 
 ### Demo
-0.	Run `experiments/unicycle_SI_optimization.m` to synthesis an optimal safety index for unicycle collision avoidance. the acceleration limits are $[-1,1]$, and the angular velocity limits are $[-0.1,0.1]$. velocity limits are $[0,1]$, and heading angle range is $[0, pi/2]$.
+0.	Run `experiments/unicycle_SI_optimization.m` to synthesis an optimal safety index for unicycle collision avoidance. the acceleration limits are $[-1,1]$, and the angular velocity limits are $[-0.1,0.1]$. velocity limits are $[0,1]$, and heading angle range is $[0, \pi/2]$.
 0.	Run `experiments/arm_ndof_SI_optimization.m` to synthesis an optimal safety index for **n** degrees-of-freedom planar manipulator collision avoidance. (The safety index is searched within a limited range, and feasible safety index will be collected and optimal safety index can then be chosen) The acceleration limits for all joints are $[-1,1]$. The state space limits are specified in the code.
 
 
