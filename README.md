@@ -23,7 +23,7 @@ CPU, Windows 7 or later, MAC OS.
 0. For **Planar Manipulator Experiments**, it is recommend to first try `experiments/arm_1dof_SI_optimization.m`, which is a simplest version where only 1 link planar robot is considered. The explicit SOSP derivative is elaborated in the [paper section VII B](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10156463), the only difference is that code in this repo considers a stricter condtion *non-empty set of safe control for all possible states*, meaning only $f1,f2,f3,f4$ are included in (18). 
 0. For **Unicycle Experiment**, it is recommend to read [this paper](https://openreview.net/forum?id=UGp6FDaxB0f), which analytically derived the safety index synthesis rule for unicycle. According to the (11) of Appendex C.1, when $\cos(\alpha) > 0$, safety index should satisfy the following condition:
 
-$$\forall (a,v), \exists (\alpha,w), \text{ s.t. } -\frac{a}{v} + \tan(\alpha) w \geq \frac{n d^{n-1}}{k},$$
+$$\forall (\alpha,v), \exists (a,w), \text{ s.t. } -\frac{a}{v} + \tan(\alpha) w \geq \frac{n d^{n-1}}{k},$$
 
 which indicates setting $n=1$, and take the maximizer of acceleration and angular velocity, the following condition should hold
 
