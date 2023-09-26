@@ -103,7 +103,7 @@ function [c, ceq] = nonlcon_sdp(k, x)
     bz_coe = -p1*k; % cos * dtheta^2
 
     % global variables = [1 y z a b] 
-    % y=theta
+    % y=dtheta
     % z=dtheta^2
     % a=sin(theta)
     % b=cos(theta)
